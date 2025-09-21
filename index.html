@@ -4,18 +4,34 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <link rel="stylesheet" href="src/styles.css" />
-      <title>AI API Challenge</title>
+      <title>CSS in JS</title>
+
+      <style>
+         button {
+            background: black;
+            color: white;
+            border: 10;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+         }
+
+         .highlight {
+            color: red;
+            background-color: yellow;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+         }
+
+         .hidden {
+            display: none;
+         }
+      </style>
    </head>
    <body>
-      <h1>AI API Challenges</h1>
-
-      <h3>Challenge 1</h3>
-      <p>Import Axios</p>
-
-      <h3>Challenge 2</h3>
-      <p>Alert who the first female president was using the SheCodes AI API</p>
-
+      <h1 class="highlight">Welcome to my Application</h1>
+      <button id="special-button" class="danger">Hide Heading</button>
       <script src="src/index.js"></script>
    </body>
 </html>

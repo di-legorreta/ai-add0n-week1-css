@@ -1,4 +1,4 @@
-function showAnswer(response) {
+/*function showAnswer(response) {
    alert(response.data.answer);
 }
 
@@ -16,4 +16,12 @@ const apiUrl =
    "&key=" +
    apiKey;
 
-axios.get(apiUrl).then(showAnswer);
+axios.get(apiUrl).then(showAnswer);*/
+
+function handleClick() {
+   let heading = document.querySelector("h1");
+   heading.classList.add("hidden");
+}
+
+const buttonElement = document.querySelector("#special-button");
+buttonElement.addEventListener("click", handleClick);
